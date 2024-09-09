@@ -1,5 +1,4 @@
 import "./App.css";
-import BlogCreate from "./components/blogcreate/blog-create";
 import Cart from "./components/cart/cart";
 import Carusel from "./components/carusel/carusel";
 import Counter from "./components/counter/counter";
@@ -15,7 +14,6 @@ function App() {
       <Counter />
       <Hero />
       <Cart />
-      <BlogCreate />
     </>
   );
 }

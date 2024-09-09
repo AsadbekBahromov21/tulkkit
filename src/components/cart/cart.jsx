@@ -6,22 +6,6 @@ import { update } from "../../redux/cart";
 import { v4 as id } from "uuid";
 import BasicModal from "../modal/Modal";
 const Cart = () => {
-  const initialState = {
-    id: "",
-    username: "",
-    lname: "",
-    phone: "",
-    desc: "",
-  };
-  // const handlSumbit = (e) => {
-  //   e.preventDefault();
-  //   setOpen(false);
-  // };
-
-  const handleChange = (e) => {
-    let { name, value } = e.target;
-    setData((prev) => ({ ...prev, [name]: value }));
-  };
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.cart.value);
   console.log(cart);
